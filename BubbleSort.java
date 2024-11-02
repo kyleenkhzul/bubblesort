@@ -33,12 +33,12 @@ public class BubbleSort {
         while(swappedSomething) {
             swappedSomething = false;
             
-            for(int i = 0; i < numbers.length - 1; i++) {
-                if(numbers[i] > numbers[i+1]) {
+            for(int i = 0; i < inputArray.length - 1; i++) {
+                if(inputArray[i] > inputArray[i+1]) {
                     swappedSomething = true;
-                    int temp = numbers[i];
-                    numbers[i] = numbers[i+1];
-                    numbers[i+1] = temp;
+                    int temp = inputArray[i];
+                    inputArray[i] = inputArray[i+1];
+                    inputArray[i+1] = temp;
                 }
             }
         }
